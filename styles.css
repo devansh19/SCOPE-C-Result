@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(252, 231, 231);
+}
+.header {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-color: purple;
+}
+.heading {
+  text-align: center;
+}
+.domains {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: 200px 400px 1fr;
+}
+
+.bmi {
+  display: grid;
+  grid-template-columns: 200px 200px; 
+}
+
+button {
+  background-color: purple;
+        color: white;
+        border: none;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 19px;
+        padding-right: 19px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-left: 10px;
+        vertical-align: top;
+        transition: 0.2s;
+}
