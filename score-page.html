@@ -2,12 +2,46 @@
 <html>
 <head>
     <title>Survey Results</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Survey Results</h1>
-    <div id="surveyResults"></div>
+  <div class="header">
+    <h1 class ="heading">Survey Results</h1>
+  </div>
+   <p><center><i>Thank you very much for giving your valuable time and co-operating with us.</i></center></p>
+    <br>
+   <p>The scale measures following domains i.e.</p>
+  <div class = "domains">
+    <div>1. Function<br>4. Nutrition<br>7. Poly pharmacy</div>
+    <div>2. Affect<br>5. Co-morbidity<br>8. Social Support/QoL</div>
+    <div>3. Cognition<br>6. Geriatric syndromes</div>
+  </div>
+  <br>
+  <div class="questions" >
+    <div><br>Questions 1 - 3
+      <br>Question 4<br>Question 5<br>Question 6<br>Question 7<br>Question 8<br>Question 9<br>Questions 10 - 13</div>
+    <div><br>Functional domain<br>Depression<br>Cognition<br>Nutrition<br>Co - morbidities<br>Geriatric syndrome<br>Poly-pharmacy<br>Quality of Life (QOL) and social support</div>
+    <div><b>Scores</b><br>
+      <div class = "js-score"></div>
+    </div>
+    <div><b>Prognosis</b><br>
+      <div class = "js-prognosis"></div>
+    </div>
+  </div>
+  <br>
+  <p><u>Interpretation of scoring</u></p>
+  <p>A higer score denotes better prognosis whereas a lower score denotes worse prognosis</p>
+  <br>
+  <p><u>Obesity according to BMI</u>**(WHO expert consultation on BMI in Asian population)</p>
+  <div class="bmi"> 
+    <div>Underweight<br>Normal Range<br>Overweight<br>Obese</div>
+    <div>18.5<br>18.5-23<br>23-27.5<br>>=27.5</div>
+  </div>
+  <br>
+  <p id="totalScore"></p>
+    <p id="prognosis"></p>
+  <center><button onclick="calculatePrognosisScores();">Calculate Score</button><button>Home</button><button>Take Survey Again</button></body></center>
 
-    <script src="script.js"></script>
+<script src="score.js"></script>
 </body>
 </html>
