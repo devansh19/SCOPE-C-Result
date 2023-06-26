@@ -16,8 +16,10 @@ body {
 
 .questions {
   display: grid;
-  grid-template-columns: 200px 400px 1fr;
+  grid-template-columns: 200px 2fr 1fr 1fr;
+  
 }
+
 
 .bmi {
   display: grid;
@@ -28,6 +30,7 @@ button {
   background-color: purple;
         color: white;
         border: none;
+       
         padding-top: 9px;
         padding-bottom: 9px;
         padding-left: 19px;
