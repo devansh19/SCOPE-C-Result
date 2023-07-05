@@ -1,0 +1,63 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set height for the parallax container */
+.parallax-container {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Style the parallax background */
+.parallax-background {
+    background-image: url("pink-clouds-bg.jpg"); /* Replace with your own image */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Style the parallax content */
+.parallax-content {
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Add some extra styles for headings and paragraphs */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Apply a parallax effect on scroll */
+.parallax-container:nth-child(odd) .parallax-background {
+    transform: translateZ(-1px) scale(1.5);
+}
+
+.parallax-container:nth-child(even) .parallax-background {
+    transform: translateZ(-1px) scale(1.2);
+}
